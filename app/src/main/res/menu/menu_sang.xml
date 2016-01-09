@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.betrisey.suzanne.androidproject.Sang">
+
+
+    <item android:id="@+id/action_filtre_groupe_sanguin"
+        android:title="@string/action_filtre_groupe_sanguin"
+        android:orderInCategory="10"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_filtre_statut"
+        android:title="@string/action_filtre_statut"
+        android:orderInCategory="20"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_filtre_date"
+        android:title="@string/action_filtre_date"
+        android:orderInCategory="30"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_parametre"
+        android:title="@string/action_parametre"
+        android:orderInCategory="60"
+        app:showAsAction="never" />
+
+</menu>

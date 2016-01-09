@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.betrisey.suzanne.androidproject.AfficherDonneur">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/darkRed"
+        android:id="@+id/frameLayout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/donSang"
+            android:clickable="true"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/textView_DonDeSang"
+            android:onClick="buttonDonDeSang"
+            android:textSize="18dp"
+            android:background="@drawable/border"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/icon_edit"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/icon_edit"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:background="@color/darkRed"
+            android:clickable="true"
+            android:onClick="buttonEdit"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/frameLayout"
+        android:layout_margin="5dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/textPrenom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:paddingTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textPrenom"
+                android:layout_marginLeft="15dp">
+
+                <TableLayout
+                    android:id="@+id/tableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TableLayout>
+
+            </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

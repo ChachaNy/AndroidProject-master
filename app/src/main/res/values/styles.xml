@@ -1,0 +1,71 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Style pour fenetre home -->
+    <style name="Home" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/back</item>
+    </style>
+
+    <!-- Style pour fenetre fonctionalite -->
+    <style name="Fonctionalite" parent="Theme.AppCompat.Light">
+        <item name="android:windowBackground">@drawable/back</item>
+        <item name="android:actionBarStyle" tools:ignore="NewApi">@style/ActionBar</item>
+        <item name="actionBarStyle">@style/ActionBar</item>
+        <item name="colorControlNormal">@color/grey</item>
+        <item name="colorControlActivated">@color/darkRed</item>
+        <item name="colorControlHighlight">@color/darkRed</item>
+    </style>
+
+    <!-- Style pour fenetre options -->
+    <style name="Options" parent="Theme.AppCompat.Light">
+        <item name="android:windowBackground">@drawable/back</item>
+        <item name="android:actionBarStyle" tools:ignore="NewApi">@style/ActionBarSimple</item>
+        <item name="actionBarStyle">@style/ActionBarSimple</item>
+        <item name="colorControlNormal">@color/grey</item>
+        <item name="colorControlActivated">@color/darkRed</item>
+        <item name="colorControlHighlight">@color/darkRed</item>
+    </style>
+
+    <!-- Style pour fenetre options avec flèche retour -->
+    <style name="OptionsRetour" parent="Theme.AppCompat.Light">
+        <item name="android:windowBackground">@drawable/back</item>
+        <item name="android:actionBarStyle" tools:ignore="NewApi">@style/ActionBarOptions</item>
+        <item name="actionBarStyle">@style/ActionBarOptions</item>
+        <item name="colorControlNormal">@color/grey</item>
+        <item name="colorControlActivated">@color/darkRed</item>
+        <item name="colorControlHighlight">@color/darkRed</item>
+    </style>
+
+    <!-- Style pour action bar-->
+    <style name="ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/white</item>
+        <item name="background">@color/white</item>
+        <item name="titleTextStyle">@style/TitleTextStyle</item>
+        <item name="android:homeAsUpIndicator" tools:ignore="NewApi">@drawable/icon</item>
+        <item name="homeAsUpIndicator">@drawable/icon</item>
+    </style>
+
+    <!-- Style pour action bar-->
+    <style name="ActionBarOptions" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/white</item>
+        <item name="background">@color/white</item>
+        <item name="titleTextStyle">@style/TitleTextStyle</item>
+        <item name="android:homeAsUpIndicator" tools:ignore="NewApi">@drawable/icon_retour</item>
+        <item name="homeAsUpIndicator">@drawable/icon_retour</item>
+    </style>
+
+    <!-- Style pour action bar simple-->
+    <style name="ActionBarSimple" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/white</item>
+        <item name="background">@color/white</item>
+        <item name="titleTextStyle">@style/TitleTextStyle</item>
+    </style>
+
+    <!-- Style pour titre action bar-->
+    <style name="TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
+</resources>

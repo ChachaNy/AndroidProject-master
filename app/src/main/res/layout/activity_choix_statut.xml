@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.betrisey.suzanne.androidproject.ChoixStatut">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/darkRed"
+        android:id="@+id/frameLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=" OK "
+            android:id="@+id/textView_Ok"
+            android:layout_gravity="right|center_vertical"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:onClick="buttonOk"
+            android:clickable="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/annuler"
+            android:id="@+id/textView_Delete"
+            android:layout_gravity="left|center_vertical"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="buttonAnnuler"
+            android:clickable="true"
+            android:background="@drawable/border"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/frameLayout2">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:text="@string/statut"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/radioGroup"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/radioBtnStock"
+                    android:text="@string/enStock" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/radioBtnUtilisable"
+                    android:text="@string/inutilisable" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/radioBtnTransfert"
+                    android:text="@string/transfert" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/radioBtnCommande"
+                    android:text="@string/commande" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/radioBtnUtilise"
+                    android:text="@string/utilise" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

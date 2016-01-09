@@ -1,0 +1,170 @@
+<resources>
+    <string name="app_name">Blutspende</string>
+
+    <!-- Nom parametre -->
+    <string name="action_search">Suche</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="action_home">Home</string>
+
+    <!-- Titre activites -->
+    <string name="title_activity_intervention">EINSATZ</string>
+    <string name="title_activity_parametre">EINSTELLUNGEN</string>
+    <string name="title_activity_sang">BLUTBANK</string>
+    <string name="title_activity_donneur">SPENDER</string>
+    <string name="title_activity_nouveau_donneur">NEUER SPENDER</string>
+    <string name="title_activity_afficher_donneur">SPENDER</string>
+    <string name="title_activity_modifier_donneur">SPENDER</string>
+    <string name="title_activity_don_de_sang">BLUTSPENDE</string>
+    <string name="title_activity_ajouter_intervention">NEUER EINSATZ</string>
+    <string name="title_activity_supprimer_intervention">STORNIERUNG EINSATZ</string>
+    <string name="title_activity_afficher_intervention">EINSATZ</string>
+    <string name="title_activity_afficher_pochette">BLUTBEUTEL</string>
+    <string name="title_activity_choix_statut">BLUTBEUTEL STATUS</string>
+    <string name="title_activity_transfert">BLUTBEUTEL TRANSFER</string>
+    <string name="title_activity_modifier_intervention">EINSATZ</string>
+
+    <!-- Fenetre donneur -->
+    <string name="action_nouveau_donneur">Neuer Spender</string>
+    <string name="action_filtre_disponibilite">Nach Verfügbarkeit filtern</string>
+    <string name="action_filtre_nom">Nach Name filtern</string>
+    <string name="action_filtre_prenom">Nach Vorname filtern</string>
+    <string name="action_filtre_naissance">Nach Geburtsdatum filtern</string>
+    <string name="action_parametre">Einstellungen</string>
+    <string name="filtreNaissance">Filter: Geburtsdatum</string>
+    <string name="filtreDispo">Filter: Verfügbarkeit</string>
+    <string name="filtrePrenom">filter: Vorname</string>
+
+    <!-- Fenetre modifier donneur -->
+    <string-array name="infoModifDonneur">
+        <item>Vorname:</item>
+        <item>Name:</item>
+        <item>Geschlecht:</item>
+        <item>Geburtsdatum:</item>
+        <item>Adresse:</item>
+        <item>PLZ:</item>
+        <item>Ort:</item>
+        <item>Region:</item>
+        <item>Telefon:</item>
+        <item>Blutgruppe:</item>
+        <item>Mögliche Spende:</item>
+        <item>Verfügbarkeit:</item>
+    </string-array>
+
+    <!-- Fenetre banque du sang -->
+    <string name="action_filtre_groupe_sanguin">Nach Blutgruppe filtern</string>
+    <string name="action_filtre_statut">Nach Status filtern</string>
+    <string name="action_filtre_date">Nach Verfalldatum</string>
+    <string name="filtreGroupe">Filter: Blutgruppe</string>
+    <string name="filtreStatut">Filter: Status</string>
+    <string name="filtreDate">Filter: Verfalldatum</string>
+
+    <!-- Fenetre intervention -->
+    <string name="action_ajouter_intervention">Neuer Einsatz</string>
+    <string name="action_supprimer_intervention">Einsatz stornieren</string>
+    <string name="alerteQuPochette">Bitte eine Zahl für der Anzahl Blutbeutel angeben.</string>
+    <string name="alerteDate">Kein Datum wurde angegeben.</string>
+
+    <!-- Fenetre intervention -->
+    <string name="selectionnes">markiert</string>
+    <string name="pochette">Bestellte Blutbeutel:</string>
+    <string name="nrpochette">ID: </string>
+
+    <!-- Fenetre modifier intervention -->
+    <string name="alerteErreur">Fehler</string>
+
+    <!-- Fenetre pochette -->
+    <string name="action_transfert">Transfer</string>
+    <string name="action_statut">Status ändern</string>
+
+    <!-- Formulaire nouveau donneur -->
+    <string name="nom">Name:</string>
+    <string name="prenom">Vorname:</string>
+    <string name="sexe">Geschlecht:</string>
+    <string name="feminin">weiblich</string>
+    <string name="masculin">männlich</string>
+    <string name="dateNaissance">Geburtsdatum:</string>
+    <string name="jour">Tag</string>
+    <string name="mois">Monat</string>
+    <string name="annee">Jahr</string>
+    <string name="adresse">Adresse:</string>
+    <string name="npa">PLZ:</string>
+    <string name="lieu">Ort:</string>
+    <string name="region">Region:</string>
+    <string name="telephone">Telefon:</string>
+    <string name="groupe">Gruppe:</string>
+    <string name="alerteNom">Der Name und der Vorname des Spenders sind verlangt.</string>
+    <string name="alerteChamps">Alle Felder müssen ausgefüllt sein.</string>
+    <string name="alerteNPA">Bitte den PlZ angebene. Buchstaben sind nicht möglich.</string>
+
+    <!-- Fenêtre parametre-->
+    <string name="langue">Sprache:</string>
+    <string name="francais">Französisch</string>
+    <string name="allemand">Deutsch</string>
+
+    <!-- Fenêtre afficher donneur-->
+    <string name="donsPossibles">Mögliche Spende:</string>
+    <string name="disponibilite">Verfügbarkeit:</string>
+    <string-array name="infoDonneur">
+        <item>Geschlecht:</item>
+        <item>Geburtsdatum:</item>
+        <item>Adresse:</item>
+        <item>PLZ:</item>
+        <item>Ort:</item>
+        <item>Region:</item>
+        <item>Telefon:</item>
+        <item>Blutgruppe:</item>
+        <item>Mögliche Spende:</item>
+        <item>Verfügbarkeit:</item>
+    </string-array>
+
+    <string name="alerteSang1">Die Person darf sein Blut nicht spenden.</string>
+    <string name="alerteSang2">Verfügbar ab den </string>
+
+
+    <!-- Fenêtre choix_Statut -->
+    <string name="statut">Status</string>
+    <string name="enStock">gelagert</string>
+    <string name="inutilisable">unbrauchbar</string>
+    <string name="commande">bestellt</string>
+    <string name="transfert">in Transfer</string>
+    <string name="utilise">verbraucht</string>
+
+    <!-- Fenêtre don de sang -->
+    <string name="utilisable">Ist der Blutbeutel brauchbar?</string>
+    <string name="malaise">Wurde der Spender ohnmächtig?</string>
+    <string-array name="infoDon">
+        <item>Nummer:</item>
+        <item>Spender:</item>
+        <item> </item>
+        <item>Grupper:</item>
+        <item>Spendedatum:</item>
+    </string-array>
+    <string name="pochette_cree">Blutbeutel herstellt</string>
+    <string name="alertePochette">Bitte gebt an ob der Blutbeutel brauchbar ist und ob der Spender ohnmächtig wurde.</string>
+
+    <!-- Fenêtre AffichagePochette -->
+    <string-array name="infoPochette">
+        <item>ID Spender:</item>
+        <item>Spendedatum:</item>
+        <item>Verfalldatum:</item>
+        <item>Region:</item>
+        <item>Gruppe:</item>
+        <item>Status:</item>
+    </string-array>
+
+    <!-- Layouts -->
+    <string name="donSang">\u00A0 Blutspende \u00A0</string>
+    <string name="date">Datum:</string>
+    <string name="quantite">Anzahl:</string>
+    <string name="description">Beschreibung:</string>
+    <string name="annuler">\u00A0 Abbrechen \u00A0</string>
+    <string name="ajouterDate">Datum hinzufügen</string>
+    <string name="stockage">Lagerung:</string>
+    <string name="filtreNom">Filter: Name</string>
+    <string name="filtreByDate">Filter: Datum</string>
+    <string name="annulerSansEsp">Abbrechen</string>
+    <string name="filtreSang">Filter: Blutgruppen</string>
+    <string name="aucunSelectionne">0 markiert</string>
+
+    <string name="alerteIntervention">Kein Einsatz hat diesen Blutbeutel bestellt.</string>
+</resources>

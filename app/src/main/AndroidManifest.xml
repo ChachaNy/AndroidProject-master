@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.betrisey.suzanne.androidproject" >
+
+    <uses-sdk
+        android:maxSdkVersion="14"
+        android:minSdkVersion="8"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_app"
+        android:label="@string/app_name" >
+
+        <!-- Home -->
+        <activity
+            android:name=".Home"
+            android:theme="@style/Home" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Donneur -->
+        <activity
+            android:name=".Donneur"
+            android:label="@string/title_activity_donneur"
+            android:theme="@style/Fonctionalite" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.betrisey.suzanne.androidproject.Home" />
+        </activity>
+
+        <!-- NouveauDonneur -->
+        <activity
+            android:name=".NouveauDonneur"
+            android:label="@string/title_activity_nouveau_donneur"
+            android:parentActivityName=".Donneur"
+            android:theme="@style/OptionsRetour" >
+        </activity>
+
+        <!-- Intervention -->
+        <activity
+            android:name=".Intervention"
+            android:label="@string/title_activity_intervention"
+            android:theme="@style/Fonctionalite" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.betrisey.suzanne.androidproject.Home" />
+        </activity>
+
+        <!-- Banque du sang -->
+        <activity
+            android:name=".Sang"
+            android:label="@string/title_activity_sang"
+            android:theme="@style/Fonctionalite" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.betrisey.suzanne.androidproject.Home" />
+        </activity>
+
+        <!-- Parametre -->
+        <activity
+            android:name=".Parametre"
+            android:label="@string/title_activity_parametre"
+            android:theme="@style/Fonctionalite" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.betrisey.suzanne.androidproject.Home" />
+        </activity>
+
+        <!-- Afficher Donneur -->
+        <activity
+            android:name=".AfficherDonneur"
+            android:label="@string/title_activity_afficher_donneur"
+            android:parentActivityName=".Donneur"
+            android:theme="@style/OptionsRetour" >
+        </activity>
+
+        <!-- Modifier Donneur -->
+        <activity
+            android:name=".ModifierDonneur"
+            android:label="@string/title_activity_modifier_donneur"
+            android:parentActivityName=".Donneur"
+            android:theme="@style/Options" >
+        </activity>
+
+        <!-- Don de Sang -->
+        <activity
+            android:name=".DonDeSang"
+            android:label="@string/title_activity_don_de_sang"
+            android:parentActivityName=".Donneur"
+            android:theme="@style/Options" >
+        </activity>
+
+        <!-- Ajouter Intervention -->
+        <activity
+            android:name=".AjouterIntervention"
+            android:label="@string/title_activity_ajouter_intervention"
+            android:parentActivityName=".Donneur"
+            android:theme="@style/Options" >
+        </activity>
+
+        <!-- Supprimer Intervention -->
+        <activity
+            android:name=".SupprimerIntervention"
+            android:label="@string/title_activity_supprimer_intervention"
+            android:parentActivityName=".Intervention"
+            android:theme="@style/OptionsRetour" >
+        </activity>
+
+        <!-- Afficher Intervention -->
+        <activity
+            android:name=".AfficherIntervention"
+            android:label="@string/title_activity_afficher_intervention"
+            android:parentActivityName=".Intervention"
+            android:theme="@style/OptionsRetour" >
+        </activity>
+
+        <!-- Afficher Pochette de Sang -->
+        <activity
+            android:name=".AffichagePochetteSang"
+            android:label="@string/title_activity_afficher_pochette"
+            android:parentActivityName=".Sang"
+            android:theme="@style/OptionsRetour" >
+        </activity>
+
+        <!-- Choix Statut -->
+        <activity
+            android:name=".ChoixStatut"
+            android:label="@string/title_activity_choix_statut"
+            android:parentActivityName=".AffichagePochetteSang"
+            android:theme="@style/Options" >
+        </activity>
+
+        <!-- Transfert -->
+        <activity
+            android:name=".Transfert"
+            android:label="@string/title_activity_transfert"
+            android:parentActivityName=".AffichagePochetteSang"
+            android:theme="@style/Options" >
+        </activity>
+
+        <!-- Modifier intervention -->
+        <activity
+            android:name=".ModifierIntervention"
+            android:label="@string/title_activity_modifier_intervention"
+            android:parentActivityName=".AfficherIntervention"
+            android:theme="@style/Options" >
+        </activity>
+    </application>
+
+</manifest>

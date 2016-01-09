@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.betrisey.suzanne.androidproject.DonDeSang">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/darkRed"
+        android:id="@+id/frameLayout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" OK "
+            android:id="@+id/textView_Delete"
+            android:layout_marginLeft="10dp"
+            android:onClick="buttonOk"
+            android:layout_gravity="left|center_vertical"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:clickable="true"
+            android:background="@drawable/border"/>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/frameLayout"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayout">
+
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stockage"
+                android:id="@+id/textView3"
+                android:gravity="center_vertical"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tableLayout"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:layout_centerHorizontal="true"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tableLayout"/>
+
+            <Spinner
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerRegion"
+                android:textColor="@color/greyLight"
+                android:textSize="18dp"
+                android:layout_marginLeft="-9dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/textView4"
+                android:layout_alignBaseline="@+id/textView3"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/textUtilisable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="@string/utilisable"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <ImageButton
+                android:id="@+id/btnUtilOui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textUtilisable"
+                android:src="@drawable/btn_oui_des"
+                android:adjustViewBounds="true"
+                android:onClick="buttonUtilOui"
+                android:background="@color/white"/>
+
+            <ImageButton
+                android:id="@+id/btnUtilNon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/btnUtilOui"
+                android:layout_toEndOf="@+id/btnUtilOui"
+                android:src="@drawable/btn_non_des"
+                android:onClick="buttonUtilNon"
+                android:adjustViewBounds="true"
+                android:background="@color/white"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/textMalaise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnUtilOui"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="@string/malaise"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"/>
+
+            <ImageButton
+                android:id="@+id/btnMalOui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textMalaise"
+                android:src="@drawable/btn_oui_des"
+                android:adjustViewBounds="true"
+                android:onClick="buttonMalOui"
+                android:background="@color/white"/>
+
+            <ImageButton
+                android:id="@+id/btnMalNon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/btnMalOui"
+                android:layout_toEndOf="@+id/btnMalOui"
+                android:src="@drawable/btn_non_des"
+                android:onClick="buttonMalNon"
+                android:adjustViewBounds="true"
+                android:background="@color/white"
+                android:layout_marginLeft="20dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.betrisey.suzanne.androidproject.Parametre">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/darkRed"
+        android:id="@+id/frameLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=" OK "
+            android:id="@+id/textView_Ok"
+            android:layout_gravity="right|center_vertical"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:onClick="buttonOk"
+            android:clickable="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/annuler"
+            android:id="@+id/textView_Delete"
+            android:layout_gravity="left|center_vertical"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="buttonAnnuler"
+            android:clickable="true"
+            android:background="@drawable/border"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/frameLayout2"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/editRegion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:text="@string/region"/>
+
+        <Spinner
+            android:id="@+id/spinnerRegions"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:entries="@array/region"
+            android:layout_alignTop="@+id/editRegion"
+            android:layout_alignLeft="@+id/radioGroup"
+            android:layout_alignStart="@+id/radioGroup">
+        </Spinner>
+
+        <TextView
+            android:id="@+id/editLangue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:text="@string/langue"
+            android:layout_below="@+id/editRegion"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="58dp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/radioGroup"
+            android:layout_alignTop="@+id/editLangue"
+            android:layout_centerHorizontal="true">
+
+
+            <RadioButton
+                android:id="@+id/radioFrancais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:checked="false"
+                android:text="@string/francais"
+                android:layout_below="@+id/radioGroup"
+                android:layout_alignLeft="@+id/radioGroup"
+                android:layout_alignStart="@+id/radioGroup" />
+
+            <RadioButton
+                android:id="@+id/radioAllemand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:checked="false"
+                android:text="@string/allemand"
+                android:layout_below="@+id/radioFrancais"
+                android:layout_alignLeft="@+id/radioFrancais"
+                android:layout_alignStart="@+id/radioFrancais" />
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/sync"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/radioGroup"
+            android:layout_alignEnd="@+id/radioGroup"
+            android:onClick="sync" />
+
+    </RelativeLayout>
+
+</LinearLayout>

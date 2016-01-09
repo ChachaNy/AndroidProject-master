@@ -1,0 +1,331 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.betrisey.suzanne.androidproject.NouveauDonneur">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/darkRed"
+        android:id="@+id/frameLayout_NouveauDonneur"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/annuler"
+            android:id="@+id/textView_Delete"
+            android:layout_marginLeft="10dp"
+            android:onClick="buttonAnnuler"
+            android:layout_gravity="left|center_vertical"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:clickable="true"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=" OK "
+            android:id="@+id/textView_Ok"
+            android:layout_gravity="right|center_vertical"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:onClick="buttonOk"
+            android:clickable="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border"/>
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frameLayout_NouveauDonneur">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/frameLayout_NouveauDonneur"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textNom"
+            android:text="@string/nom"
+            android:layout_marginBottom="25dp"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textNom"
+            android:textColor="@color/greyLight"
+            android:textSize="18dp"
+            android:layout_alignLeft="@+id/editPrenom"
+            android:layout_alignStart="@+id/editPrenom" />
+
+        <TextView
+            android:id="@+id/textPrenom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prenom"
+            android:layout_below="@+id/textNom"
+            android:layout_marginBottom="25dp"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editPrenom"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/textPrenom"
+            android:layout_alignBaseline="@+id/textPrenom"
+            android:textColor="@color/greyLight"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sexe"
+            android:id="@+id/textSexe"
+            android:layout_below="@+id/textPrenom"
+            android:layout_marginBottom="25dp"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+         />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radioGroup"
+            android:layout_alignTop="@+id/textSexe"
+            android:layout_alignLeft="@+id/editPrenom"
+            android:layout_alignEnd="@+id/editPrenom">
+
+            <RadioButton
+                android:id="@+id/radioFeminin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/feminin"
+                android:textSize="18dp"
+                android:layout_alignBottom="@+id/radioGroup"
+                android:layout_toRightOf="@+id/textSexe"
+                android:layout_toEndOf="@+id/textSexe" />
+
+            <RadioButton
+                android:id="@+id/radioMasculin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/masculin"
+                android:layout_marginLeft="10dp"
+                android:textSize="18dp"
+                android:layout_alignBottom="@+id/radioGroup"
+                android:layout_toRightOf="@+id/radioFeminin"
+                android:layout_toEndOf="@+id/radioFeminin" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/textDateNaissance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dateNaissance"
+            android:layout_below="@+id/radioGroup"
+            android:paddingTop="15dp"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewDate"
+            android:textColor="@color/greyLight"
+            android:textSize="18dp"
+            android:clickable="true"
+            android:onClick="showTimePickerDialog"
+            android:text="ajouter une date"
+            android:layout_marginLeft="10dp"
+            android:layout_above="@+id/relativeLayout2"
+            android:layout_toRightOf="@+id/textDateNaissance"
+            android:layout_toEndOf="@+id/textDateNaissance" />
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textDateNaissance"
+            android:id="@+id/relativeLayout2"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/textAdresse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adresse"
+                android:layout_marginBottom="25dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/editAdresse"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/textAdresse"
+                android:layout_alignBaseline="@+id/textAdresse"
+                android:textColor="@color/greyLight"
+                android:textSize="18dp"
+                android:layout_alignLeft="@+id/editTelephone"/>
+
+            <TextView
+                android:id="@+id/textNpa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/npa"
+                android:layout_below="@+id/textAdresse"
+                android:layout_marginBottom="25dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/ediNpa"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/textNpa"
+                android:layout_alignBaseline="@+id/textNpa"
+                android:textColor="@color/greyLight"
+                android:textSize="18dp"
+                android:layout_alignLeft="@+id/editTelephone"/>
+
+            <TextView
+                android:id="@+id/textLieu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lieu"
+                android:layout_below="@+id/textNpa"
+                android:layout_marginBottom="25dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/editLieu"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/textLieu"
+                android:layout_alignBaseline="@+id/textLieu"
+                android:textColor="@color/greyLight"
+                android:textSize="18dp"
+                android:layout_alignLeft="@+id/editTelephone"/>
+
+            <TextView
+                android:id="@+id/textRegion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/region"
+                android:layout_below="@+id/textLieu"
+                android:layout_marginBottom="25dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"/>
+
+            <Spinner
+                android:id="@+id/spinnerRegion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/textRegion"
+                android:layout_alignBaseline="@+id/textRegion"
+                android:textColor="@color/greyLight"
+                android:textSize="18dp"
+                android:layout_alignLeft="@+id/editTelephone"/>
+
+            <TextView
+                android:id="@+id/textTelephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/telephone"
+                android:layout_below="@+id/textRegion"
+                android:layout_marginBottom="25dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/editTelephone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/textTelephone"
+               android:layout_alignBaseline="@+id/textTelephone"
+                android:textColor="@color/greyLight"
+                android:textSize="18dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/textGroupe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/groupe"
+                android:layout_below="@+id/textTelephone"
+                android:layout_marginBottom="25dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"/>
+
+            <Spinner
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:id="@+id/spinnerGroupes"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/textGroupe"
+                android:layout_alignBaseline="@+id/textGroupe"
+                ></Spinner>
+
+            <TextView
+                android:id="@+id/textDisponible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/disponibilite"
+                android:layout_below="@+id/textGroupe"
+                android:paddingTop="15dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewDateDispo"
+                android:textColor="@color/greyLight"
+                android:textSize="18dp"
+                android:clickable="true"
+                android:onClick="showTimePickerDialog"
+                android:text="ajouter une date"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/textDisponible"
+                android:layout_alignBottom="@+id/textDisponible" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

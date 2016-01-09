@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.betrisey.suzanne.androidproject.AffichagePochetteSang">
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/darkRed"
+        android:id="@+id/frameLayout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text=" Donneur "
+            android:clickable="true"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/textView_Donneur"
+            android:onClick="buttonDonneur"
+            android:textSize="18dp"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text=" Intervention "
+            android:clickable="true"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:id="@+id/textView_Intervention"
+            android:onClick="buttonIntervention"
+            android:textSize="18dp"
+            android:background="@drawable/border"/>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/frameLayout"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:padding="15dp">
+
+
+
+        <TextView
+            android:id="@+id/textNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginBottom="30dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textNum">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TableLayout>
+        
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

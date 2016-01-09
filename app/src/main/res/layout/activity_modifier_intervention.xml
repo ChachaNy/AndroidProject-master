@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.betrisey.suzanne.androidproject.ModifierIntervention">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/darkRed"
+        android:id="@+id/frameLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=" OK "
+            android:id="@+id/textView_Ok"
+            android:layout_gravity="right|center_vertical"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:onClick="buttonOk"
+            android:clickable="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/annuler"
+            android:id="@+id/textView_Delete"
+            android:layout_gravity="left|center_vertical"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="buttonAnnuler"
+            android:clickable="true"
+            android:background="@drawable/border"/>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/frameLayout2"
+        android:clickable="true"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:id="@+id/textView"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@+id/textViewDate"
+            android:layout_alignTop="@+id/textViewDate"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewDate"
+            android:textColor="@color/greyLight"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignLeft="@+id/textViewDescription"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:onClick="showTimePickerDialog"
+            android:text="@string/ajouterDate" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantité:"
+            android:id="@+id/textView2"
+            android:layout_alignBottom="@+id/textViewQuantite"
+            android:layout_alignTop="@+id/textViewQuantite"
+            android:gravity="center_vertical"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignRight="@+id/textView4"
+            android:layout_alignEnd="@+id/textView4" />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewQuantite"
+            android:textColor="@color/greyLight"
+            android:textSize="18dp"
+            android:layout_alignLeft="@+id/textViewDate"
+            android:layout_alignRight="@+id/spinnerGroupe"
+            android:layout_below="@+id/textViewDate"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/groupe"
+            android:id="@+id/textView3"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignTop="@+id/spinnerGroupe"
+            android:layout_alignBottom="@+id/spinnerGroupe"
+            android:gravity="center_vertical"
+            android:textSize="18dp"
+            android:textColor="@color/black" />
+
+        <Spinner
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerGroupe"
+            android:layout_below="@+id/textViewQuantite"
+            android:textColor="@color/greyLight"
+            android:textSize="18dp"
+            android:layout_alignLeft="@+id/textViewDescription"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:id="@+id/textView4"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_alignTop="@+id/textViewDescription"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewDescription"
+            android:layout_below="@+id/spinnerGroupe"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/greyLight"
+            android:textSize="18dp"
+            android:layout_toRightOf="@+id/textView4"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

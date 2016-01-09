@@ -1,0 +1,170 @@
+<resources>
+    <string name="app_name">Don de sang</string>
+
+    <!-- Nom parametre -->
+    <string name="action_search">Recherche</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="action_home">Home</string>
+
+    <!-- Titre activites -->
+    <string name="title_activity_intervention">INTERVENTION</string>
+    <string name="title_activity_parametre">PARAMETRES</string>
+    <string name="title_activity_sang">BANQUE DU SANG</string>
+    <string name="title_activity_donneur">DONNEUR</string>
+    <string name="title_activity_nouveau_donneur">NOUVEAU DONNEUR</string>
+    <string name="title_activity_afficher_donneur">DONNEUR</string>
+    <string name="title_activity_modifier_donneur">DONNEUR</string>
+    <string name="title_activity_don_de_sang">DON DE SANG</string>
+    <string name="title_activity_ajouter_intervention">AJOUTER INTERVENTION</string>
+    <string name="title_activity_supprimer_intervention">SUPPRIMER INTERVENTION</string>
+    <string name="title_activity_afficher_intervention">INTERVENTION</string>
+    <string name="title_activity_afficher_pochette">POCHETTE DE SANG</string>
+    <string name="title_activity_choix_statut">STATUT POCHETTE</string>
+    <string name="title_activity_transfert">TRANSFERT POCHETTE</string>
+    <string name="title_activity_modifier_intervention">INTERVENTION</string>
+
+    <!-- Fenetre donneur -->
+    <string name="action_nouveau_donneur">Ajouter donneur</string>
+    <string name="action_filtre_disponibilite">Filtrer par disponibilité</string>
+    <string name="action_filtre_nom">Filtrer par nom</string>
+    <string name="action_filtre_prenom">Filtrer par prénom</string>
+    <string name="action_filtre_naissance">Filtrer par naissance</string>
+    <string name="action_parametre">Paramètres</string>
+    <string name="filtreNaissance">Filtre: naissance</string>
+    <string name="filtreDispo">Filtre: disponibilité</string>
+    <string name="filtrePrenom">Filtre: prénom</string>
+
+    <!-- Fenetre modifier donneur -->
+    <string-array name="infoModifDonneur">
+        <item>Prénom:</item>
+        <item>Nom:</item>
+        <item>Genre:</item>
+        <item>Naissance:</item>
+        <item>Adresse:</item>
+        <item>NPA:</item>
+        <item>Lieu:</item>
+        <item>Région:</item>
+        <item>Téléphone:</item>
+        <item>Groupe:</item>
+        <item>Dons possibles:</item>
+        <item>Disponible:</item>
+    </string-array>
+
+    <!-- Fenetre banque du sang -->
+    <string name="action_filtre_groupe_sanguin">Filtrer par groupe sanguin</string>
+    <string name="action_filtre_statut">Filtrer par statut</string>
+    <string name="action_filtre_date">Filtrer par date de péremption</string>
+    <string name="filtreGroupe">Filtre: groupe sanguin</string>
+    <string name="filtreStatut">Filtre: statut</string>
+    <string name="filtreDate">Filtre: date de péremption</string>
+
+    <!-- Fenetre intervention -->
+    <string name="action_ajouter_intervention">Ajouter intervention</string>
+    <string name="action_supprimer_intervention">Supprimer intervention</string>
+    <string name="alerteQuPochette">La quantité de pochette doit être un nombre.</string>
+    <string name="alerteDate">Aucune date n\'a été saisie.</string>
+
+    <!-- Fenetre intervention -->
+    <string name="selectionnes">selectionnés</string>
+    <string name="pochette">Pochettes commandées:</string>
+    <string name="nrpochette">ID: </string>
+
+    <!-- Fenetre modifier intervention -->
+    <string name="alerteErreur">Erreur</string>
+
+    <!-- Fenetre pochette -->
+    <string name="action_transfert">Transfert</string>
+    <string name="action_statut">Changer statut</string>
+
+    <!-- Formulaire nouveau donneur -->
+    <string name="nom">Nom:</string>
+    <string name="prenom">Prénom:</string>
+    <string name="sexe">Genre:</string>
+    <string name="feminin">Féminin</string>
+    <string name="masculin">Masculin</string>
+    <string name="dateNaissance">Naissance:</string>
+    <string name="jour">Jour</string>
+    <string name="mois">Mois</string>
+    <string name="annee">Année</string>
+    <string name="adresse">Adresse:</string>
+    <string name="npa">NPA:</string>
+    <string name="lieu">Lieu:</string>
+    <string name="region">Région:</string>
+    <string name="telephone">Téléphone:</string>
+    <string name="groupe">Groupe:</string>
+    <string name="alerteNom">Le nom et le prénom du donneur sont requis.</string>
+    <string name="alerteChamps">Tous les champs doivent être renseignés.</string>
+    <string name="alerteNPA">Veuillez remplir le champs NPA. Les lettres ne sont pas autorisées.</string>
+
+    <!-- Fenêtre parametre-->
+    <string name="langue">Langue:</string>
+    <string name="francais">Français</string>
+    <string name="allemand">Allemand</string>
+
+    <!-- Fenêtre afficher donneur-->
+    <string name="donsPossibles">Dons possibles:</string>
+    <string name="disponibilite">Disponibilité:</string>
+    <string-array name="infoDonneur">
+        <item>Genre:</item>
+        <item>Naissance:</item>
+        <item>Adresse:</item>
+        <item>NPA:</item>
+        <item>Lieu:</item>
+        <item>Région:</item>
+        <item>Téléphone:</item>
+        <item>Groupe:</item>
+        <item>Dons possibles:</item>
+        <item>Disponible:</item>
+    </string-array>
+
+    <string name="alerteSang1">Le donneur ne peut pas donner son sang. </string>
+    <string name="alerteSang2">Disponible dès le </string>
+
+
+    <!-- Fenêtre choix_Statut -->
+    <string name="statut">Statut</string>
+    <string name="enStock">En stock</string>
+    <string name="inutilisable">Inutilisable</string>
+    <string name="commande">Commandé</string>
+    <string name="transfert">Transfert</string>
+    <string name="utilise">Utilisé</string>
+
+    <!-- Fenêtre don de sang -->
+    <string name="utilisable">La pochette est-elle utilisable?</string>
+    <string name="malaise">Le donneur a-t-il perdu conscience?</string>
+    <string-array name="infoDon">
+        <item>Numéro:</item>
+        <item>Donneur:</item>
+        <item> </item>
+        <item>Groupe:</item>
+        <item>Date don:</item>
+    </string-array>
+    <string name="pochette_cree">Pochette créée</string>
+    <string name="alertePochette">Merci de saisir si la pochette est utilisable et si le donneur a perdu conscience.</string>
+
+    <!-- Fenêtre AffichagePochette -->
+    <string-array name="infoPochette">
+        <item>ID Donneur:</item>
+        <item>Date don:</item>
+        <item>Péremption:</item>
+        <item>Région:</item>
+        <item>Groupe:</item>
+        <item>Statut:</item>
+    </string-array>
+
+    <!-- Layouts -->
+    <string name="donSang">\u00A0 Don de sang \u00A0</string>
+    <string name="date">Date:</string>
+    <string name="quantite">Quantité:</string>
+    <string name="description">Description:</string>
+    <string name="annuler">\u00A0 Annuler \u00A0</string>
+    <string name="ajouterDate">ajouter une date</string>
+    <string name="stockage">Stockage:</string>
+    <string name="filtreNom">Filtre: nom</string>
+    <string name="filtreByDate">Filtre: date</string>
+    <string name="annulerSansEsp">Annuler</string>
+    <string name="filtreSang">Filtre: groupe sanguin</string>
+    <string name="aucunSelectionne">0 sélectionné</string>
+
+    <string name="alerteIntervention">Aucune intervention utilise cette pochette</string>
+   </resources>

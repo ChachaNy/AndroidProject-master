@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.betrisey.suzanne.androidproject.Donneur">
+
+
+
+
+    <item android:id="@+id/action_nouveau_donneur"
+        android:title="@string/action_nouveau_donneur"
+        android:orderInCategory="10"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_filtre_disponibilite"
+        android:title="@string/action_filtre_disponibilite"
+        android:orderInCategory="20"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_filtre_nom"
+        android:title="@string/action_filtre_nom"
+        android:orderInCategory="30"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_filtre_prenom"
+        android:title="@string/action_filtre_prenom"
+        android:orderInCategory="40"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_filtre_naissance"
+        android:title="@string/action_filtre_naissance"
+        android:orderInCategory="50"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_parametre"
+        android:title="@string/action_parametre"
+        android:orderInCategory="60"
+        app:showAsAction="never" />
+
+
+
+</menu>
